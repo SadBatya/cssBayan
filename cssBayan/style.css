@@ -11,11 +11,13 @@ h1{
     margin: 0 auto;
 }
 .wrapper{
-    width: 1920px;
+    width: 100%;
+    transition: .3s;
 }
 .faq{
     max-width: 500px;
     margin: 0 auto;
+    transition: .3s;
 }
 
 .faq {
@@ -29,11 +31,8 @@ h1{
     display: block;
     color: white;
     cursor: pointer;
-    transition: background .2s ease-out;
-}
-
-.faq-tittle:hover{
-    background-color: #b91125;
+    transition: .3s;
+    transition: background .3s ease-out;
 }
 
 .faq-input {
@@ -42,9 +41,14 @@ h1{
     -webkit-appearance: none;
     appearance: none;
     position: absolute;
+    transition: .3s;
 }
 
-.faq-input:checked + .faq_text{
+.faq-input:checked ~ .faq-tittle{
+    background-color: #b91125;
+}
+
+.faq-input:checked ~ .faq_text{
     display: block;
 }
 
@@ -53,4 +57,10 @@ h1{
     color: #fff;
     font-size: 14px;
     padding: 1em 0.5em;
+    transition: .3s;
+}
+
+.faq-tittle:hover ~ .faq_text{
+    display: block;
+    transition: .3s;
 }
