@@ -1,13 +1,13 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.5;
     background-color: #0e0e15;
     color: white;
 }
 
 h1{
-    max-width: 500px;
+    width: 16em;
     margin: 0 auto;
 }
 .wrapper{
@@ -15,7 +15,7 @@ h1{
     transition: .3s;
 }
 .faq{
-    max-width: 500px;
+    max-width: 31.25em;
     margin: 0 auto;
     transition: .3s;
 }
@@ -37,8 +37,8 @@ h1{
 }
 
 .faq-input {
-    width: 0px;
-    height: 0px;
+    width: 0em;
+    height: 0em;
     -webkit-appearance: none;
     appearance: none;
     position: absolute;
@@ -54,11 +54,18 @@ h1{
 }
 
 .faq_text {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
     display: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875em;
     padding: 1em 0.5em;
     transition: 1s ease-in-out;
+}
+
+.faq_text:hover{
+    display: block;
 }
 
 .faq-tittle:hover + .faq_text{
@@ -66,6 +73,7 @@ h1{
 }
 
 img{
-    width: 400px;
+    margin: auto;
+    width: 25em;
 }
 
