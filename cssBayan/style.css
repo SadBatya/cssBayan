@@ -41,9 +41,16 @@ h1{
     content: '';
     display: block;
     border-style: solid;
-    border-width: 8px 5px 0 5px;
+    border-width: 0.5em 0.3125em 0em 0.3125em;
     border-color: white transparent transparent transparent;
     float: right;
+    margin-right: 0.5em;
+}
+
+.faq-input:checked ~ .faq-tittle::after{
+    border-style: solid;
+    border-width: 0em 0.3125em 0.5em 0.3125em;
+    border-color: transparent transparent white transparent ;
 }
 
 .faq-input {
@@ -59,6 +66,8 @@ h1{
 .faq-input:checked ~ .faq-tittle{
     background-color: #b91125;
 }
+
+
 
 .faq-input:checked ~ .faq_text{
     display: block;
