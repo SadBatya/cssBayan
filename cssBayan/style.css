@@ -24,10 +24,11 @@ h1{
 
 }
 .faq-item {
-    margin-bottom: 1em;
     border: 1px solid red;
 }
 .faq-tittle {
+    display: flex;
+    justify-content: space-between;
     padding: 1em 0.5em;
     display: block;
     color: white;
@@ -36,12 +37,22 @@ h1{
     transition: background .3s ease-out;
 }
 
+.faq-tittle::after{
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: white transparent transparent transparent;
+    float: right;
+}
+
 .faq-input {
+    display: none;
     width: 0em;
     height: 0em;
     -webkit-appearance: none;
     appearance: none;
-    position: absolute;
+    position: static;
     transition: .3s;
 }
 
