@@ -71,8 +71,6 @@ h1{
 }
 
 .faq_text {
-    display: flex;
-    justify-content: center;
     cursor: pointer;
     display: none;
     color: #fff;
@@ -90,7 +88,7 @@ h1{
 }
 
 img{
-    margin: auto;
+    margin-left: 5em;
     width: 25em;
 }
 
