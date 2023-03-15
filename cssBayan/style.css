@@ -24,11 +24,9 @@ h1{
 
 }
 .faq-item {
-    border: 1px solid red;
+    border: 0.0625em solid red;
 }
 .faq-tittle {
-    display: flex;
-    justify-content: space-between;
     padding: 1em 0.5em;
     display: block;
     color: white;
@@ -59,7 +57,6 @@ h1{
     height: 0em;
     -webkit-appearance: none;
     appearance: none;
-    position: static;
     transition: .3s;
 }
 
